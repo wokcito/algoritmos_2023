@@ -22,6 +22,6 @@ def useTheForce(bag, objects = 0):
     elif (bag[-1] == "sable de luz"):
         return f'¡Sable de luz encontrado! Se sacaron {objects} objetos antes de encontrarlo.'
     else:
-        return useTheForce(bag[:-1], objects = objects + 1)
+        return useTheForce(bag[:-1], objects + 1)
 
 print(useTheForce(BAG))
