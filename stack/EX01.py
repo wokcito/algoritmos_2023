@@ -1,6 +1,11 @@
 """Determinar el número de ocurrencias de un determinado elemento en una pila"""
 
-from stack import Stack
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath("algoritmos_2023"))))
+
+from classStack import Stack
 from random import randint
 
 stack = Stack()

@@ -7,7 +7,12 @@ b. determinar los personajes que participaron en más de 5 películas de la saga
 c. determinar en cuantas películas participo la Viuda Negra (Black Widow);
 d. mostrar todos los personajes cuyos nombre empiezan con C, D y G"""
 
-from stack import Stack
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath("algoritmos_2023"))))
+
+from classStack import Stack
 
 stack = Stack()
 
