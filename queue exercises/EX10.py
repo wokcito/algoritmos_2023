@@ -109,13 +109,13 @@ def getNotificationByTime(min = "00:00", max = "00:00"):
     fillQueue()
 
     minTime = getMinutes(min)
-    maxTime = getMinutes(max)
+    maxTime = 1440 if getMinutes(max) == 0 else getMinutes(max)
 
     while queue.size() > 0:
         notification = queue.atention()
         time = getMinutes(notification["hour"])
 
-        if time > minTime and time < maxTime:
+        if time >= minTime and time <= maxTime:
             stack.push(notification)
     
     print(f"Las notificaciones encontradas son {stack.size()}")
