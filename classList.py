@@ -70,8 +70,9 @@ class List():
     def set(self, value, newValue):
         position = self.search(value)
 
-        if position:
-            self.__elements[position] = newValue
+        if position is not None:
+            value = self.delete(value)
+            self.insert(newValue)
 
     def comparisonCriterion(self, element, opcionalCriterion = None):
 
