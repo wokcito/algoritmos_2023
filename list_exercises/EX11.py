@@ -14,7 +14,7 @@ i. determinar en qué episodios aparece Chewbacca y mostrar además toda su info
 
 from classList import List
 
-charactersList = List("name")
+charactersList = List("name", "name")
 
 class Character():
     def __init__(self, name, height, age, gender, species, homeworld, episodes):
@@ -25,7 +25,7 @@ class Character():
         self.species = species
         self.homeworld = homeworld
         self.episodes = episodes
-    
+
     def __str__(self):
         return f"{self.name}:\n  Height: {self.height}\n  Age: {self.age}\n  Gender: {self.gender}\n  Species: {self.species}\n  Homeworld: {self.homeworld}\n"
 
