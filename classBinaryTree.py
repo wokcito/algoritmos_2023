@@ -16,7 +16,7 @@ class NodeTree():
         self.height = 0
 
 
-class BinaryTree:
+class BinaryTree():
     def __init__(self):
         self.root = None
 

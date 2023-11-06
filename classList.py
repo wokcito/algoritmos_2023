@@ -1,6 +1,6 @@
 class List():
 
-    def __init__(self, criterion):
+    def __init__(self, criterion = None):
         self.__elements = []
         self.__criterion = criterion
 
